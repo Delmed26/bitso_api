@@ -73,7 +73,7 @@ class _TopCurrencieCard extends StatelessWidget {
             //TODO: Change width of chart
             child:  ChartWidget(
               trades: ticker.trades,
-              growing: ticker.growing!
+              growing: ticker.growing ?? true
             )
           ),
           Expanded(

@@ -24,10 +24,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Bitso API',
       initialRoute: 'HomeScreen',
       routes: {
-        'HomeScreen': (context) => HomeScreen() 
+        'HomeScreen': (context) => HomeScreen()
       },
       theme: ThemeData.dark().copyWith(
         colorScheme: ThemeData().colorScheme.copyWith(
